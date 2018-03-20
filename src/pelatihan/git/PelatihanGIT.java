@@ -5,6 +5,10 @@
  */
 package pelatihan.git;
 
+import controllers.AritmatikaController;
+import models.Aritmatika;
+import view.Kalkulator;
+
 /**
  *
  * @author yusuf
@@ -16,6 +20,10 @@ public class PelatihanGIT {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Aritmatika model = new Aritmatika();
+        Kalkulator view = new Kalkulator();
+        AritmatikaController controller = new AritmatikaController(view, model);
+        view.setVisible(true);
     }
     
 }
