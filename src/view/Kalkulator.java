@@ -104,7 +104,7 @@ public class Kalkulator extends javax.swing.JFrame {
     }
     
     public void addTambahListener(ActionListener a){
-        btntambah.addActionListener(a);
+        btntambah.addActionListener(a); // aksi listener
     }
     
     /**
