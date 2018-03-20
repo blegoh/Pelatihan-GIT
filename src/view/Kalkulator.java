@@ -5,6 +5,8 @@
  */
 package view;
 
+import java.awt.event.ActionListener;
+
 /**
  *
  * @author altintop
@@ -89,6 +91,22 @@ public class Kalkulator extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    public int getBil1(){
+        return Integer.parseInt(bil1.getText());
+    }
+    
+    public int getBil2(){
+        return Integer.parseInt(bil2.getText());
+    }
+    
+    public void setHasil(int hasil){
+        this.hasil.setText(String.valueOf(hasil));
+    }
+    
+    public void addTambahListener(ActionListener a){
+        btntambah.addActionListener(a);
+    }
+    
     /**
      * @param args the command line arguments
      */
