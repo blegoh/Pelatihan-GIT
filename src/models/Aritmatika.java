@@ -23,6 +23,6 @@ public class Aritmatika {
     }
     
     public int getPenjumlahan(){
-        return bil1 * bil2;
+        return bil1 + bil2;
     }
 }
